@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Nama Lengkap : Rahmad Sidik
+NIM : 119140096
+Kelas Asal : RB -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>119140096-Rahmad Sidik #3</title>
+    <script src="main.js"></script>
+</head>
+<body id="body">
+        <form>
+            <label for="thema">Pilih Tema: </label>
+            <select name="thema" id="thema" onchange="gantitema()">
+                <option value="Light">Light</option>
+                <option value="Dark">Dark</option>
+                <option value="Grey">Grey</option>
+            </select>
+        </form>
+        <h1>Website Praktikum WEB Pekan 3</h1>
+        <h2>Bisa Menampilkan suatu definisi kata kunci tertentu dan menampilkan nilai faktorial</h2>
+        <form>
+            <label for="keyword">Pilih Keyword Anda: </label>
+            <select name="keyword" id="keyword" onchange="FindKeyWord()">
+                <option value="Definisi">Cari..</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML">HTML</option>
+            </select>
+        </form>
+        <p id="p1">Defini Akan ditampilkan disini...
+        </p>
+        <form onsubmit="return false">
+            <label for="bilangan">Masukan Bilangan: </label>
+            <input type="number" name="bilangan" id="bilangan" required>
+            <button onclick="faktorial()">Hitung Factorial</button>
+        </form>
+        <p id="p2"></p>
+        <br/>
+        <div id="about">
+            <footer>
+                <p align=center>
+                    @copyright 2021 <br />
+                    Rahmad Sidik - 119140096 <br />
+                    Teknik Informatika <br />
+                    Institut Teknologi Sumatera <br />
+                </p>
+            </footer>
+        </div>
+</body>
+</html>
