@@ -3,4 +3,3 @@
     $alamat=$_POST['alamat'];
     echo "Nama : ".$nama;
     echo "Alamat : ".$alamat;
-?>
