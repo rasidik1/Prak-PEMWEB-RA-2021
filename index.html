@@ -9,7 +9,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-  <h1>Sistem CRUD by Rahmad Sidik</h1>
+   <div>
+        <header>
+            <table>
+                <tr>
+                    <td>
+                        <img width="80px" height="80px" src="img/logo.png" />
+                    </td>
+                    <td>
+                        <h1 class="judul_header">Daftar Piutang Rahmad Sidik</h1>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.php">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
     <div id="background">
     <div id="form-bg">
         <h2 id="header">Formulir</h2>
@@ -94,15 +112,28 @@
                   <option value="2020">2020</option>
                   <option value="2021">2021</option>
                 </select>
+              </div >
+              <div class="field">
+                <label>Hutang</label>
+                <input
+                  class="hutang"
+                  type="text"
+                  name="hutang" 
+                  id="hutang"
+                  required
+                />
               </div>
+              <div class="btn_form">
               <button class="btn-tambah">Submit</button>
               <button class="btn-ubah" style="display: none">Save</button>
               <button class="btn-batal" style="display: none">Cancel</button>
+              </div>
+              
             </form>
     </div>
     
     <div id="table-mhs">
-      <h2>Data Mahasiswa</h2>
+      <h2>Data Penghutang</h2>
         <div id="header-block">
 
             <div>
@@ -115,6 +146,7 @@
 				<th width="200px">NIM</th>
 				<th width="200px">Prodi</th>
 				<th width="150px">Angkatan</th>
+        <th width="150px">Hutang</th>
 				<th width="150px">Aksi</th>
 			</tr>
 		</thead>

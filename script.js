@@ -23,7 +23,8 @@ $(document).ready(function(){
 					<td style="text-align: center;">`+respon[i].nama+`</td>
 					<td style="text-align: center;">`+respon[i].nim+`</td>
 					<td style="text-align: center;">`+respon[i].prodi+`</td>
-					<td style="text-align: center;">`+respon[i].angkatan+`</td>
+					<td style="text-align: center;">`+ respon[i].angkatan +`</td>
+					<td style="text-align: center;">`+respon[i].hutang+`</td>
 					<td style="text-align: center;">
 						<button class='btn-edit' id='`+respon[i].nim+`'>Ubah</button>
 						<button class='btn-delete' id='`+respon[i].nim+`'>Hapus</button>
@@ -50,6 +51,7 @@ $(document).ready(function(){
 		var nama = $('.nama').val();
 		var prodi = $('.prodi').val();
 		var angkatan = $('.number_angkatan').val();
+		var hutang = $('.hutang').val();
 		$.ajax({
 			type : 'POST',
 			url : 'tambah.php',
@@ -81,6 +83,7 @@ $(document).ready(function(){
 				$('.nama').val(respon.nama);
 				$('.prodi').val(respon.prodi);
 				$('.number_angkatan').val(respon.angkatan);
+				$('.hutang').val(respon.hutang);
 
 				$('.btn-tambah').hide();
 				$('.btn-ubah').show();
@@ -96,6 +99,7 @@ $(document).ready(function(){
 		var nama = $('.nama').val();
 		var prodi = $('.prodi').val();
 		var angkatan = $('.number_angkatan').val();
+		var hutang = $('.hutang').val();
 		$.ajax({
 			type : 'POST',
 			url : 'edit.php',
@@ -131,6 +135,7 @@ $(document).ready(function(){
 		$('.nama').val('');
 		$('.prodi').val('');
 		$('.number_angkatan').val('');
+		$('.hutang').val('');
 	}
 
 	$('.btn-tambah').click(function(){

@@ -5,9 +5,10 @@ $nim = $_POST['nim'];
 $nama = $_POST['nama'];
 $prodi = $_POST['prodi'];
 $angkatan = $_POST['angkatan'];
+$hutang = $_POST['hutang'];
 
 if(!($nim=='' || $nama=='' || $prodi=='' || $angkatan=='')){
-	$sql = mysqli_query($koneksi,"INSERT INTO mahasiswa VALUES('$nim','$nama','$prodi','$angkatan')");
+	$sql = mysqli_query($koneksi,"INSERT INTO mahasiswa VALUES('$nim','$nama','$prodi','$angkatan','$hutang')");
 }
 
 if($sql){
