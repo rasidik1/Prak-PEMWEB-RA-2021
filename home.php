@@ -285,7 +285,7 @@ $posts = $conn->query("SELECT * FROM post")->fetch_all(MYSQLI_ASSOC);
                         <img width="70px" height="80px" src="assets/logo_itera.jpg" />
                     </td>
                     <td>
-                        <h1 class="judul_header">Institut Teknologi Sumatera</h1>
+                        <h1 class="judul_header">Rahmad Sidik</h1>
                     </td>
                 </tr>
             </table>
